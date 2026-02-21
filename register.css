@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #e6caca, #f5e1e1);
+    background: var(--color-bg);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -16,8 +16,21 @@ body {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--color-accent);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.title{
+    font-size: var(--h1-size);
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.subtitle{
+    font-size: var(--body-sm);
+    color: var(--color-text);
+    margin-bottom: 30px;
 }
 
 /* divider Atau */
@@ -58,7 +71,7 @@ body {
 .form-control{
     background: linear-gradient(var(--color-surface)) padding-box,
                 var(--btn-gradient2) border-box;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     border-radius: 10px;
     padding: 12px;
     color: var(--color-text) !important;
@@ -79,4 +92,38 @@ body {
         0 0 0 2px rgba(243, 117, 194, 0.3),
         0 0 12px rgba(243, 117, 194, 0.7),
         0 0 20px rgba(243, 117, 194, 0.4) !important;
+}
+
+.btn-outline-primary {
+    border: 3px solid transparent;
+
+    background:
+        linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
+        var(--btn-gradient) border-box;
+
+    color: var(--color-text);
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-primary:hover {
+    border: 2px solid transparent;
+    background: var(--btn-gradient2);
+    color: white;
+}
+
+.link {
+    color: var(--color-accent);
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+.link:hover {
+    color: var(--color-highlight);
+    transform: translateY(-2px);
+}
+
+.link:active {
+    transform: translateY(-1px);
 }

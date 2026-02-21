@@ -34,14 +34,17 @@
 
   --font-primary: 'Poppins', sans-serif;
 
-  /* Font Sizes */
-  --text-xs: 12px;
-  --text-sm: 14px;
-  --text-md: 16px;
-  --text-lg: 20px;
-  --text-xl: 24px;
-  --text-2xl: 32px;
-  --text-3xl: 40px;
+  /* Heading */
+    --h1-size: 32px;
+    --h2-size: 26px;
+    --h3-size: 22px;
+    --h4-size: 18px;
+
+    /* Body */
+    --body-lg: 18px;
+    --body-md: 16px;
+    --body-sm: 14px;
+    --caption: 12px;
 
   /* Font Weight */
   --fw-light: 300;

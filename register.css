@@ -1,0 +1,82 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e6caca, #f5e1e1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.glass-container {
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* divider Atau */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+}
+
+/* kiri: normal */
+.divider::before {
+    background: var(--btn-gradient);
+}
+
+/* kanan: mirror */
+.divider::after {
+    background: linear-gradient(
+        270deg,
+        #0E21A0,
+        #4D2FB2,
+        #B153D7,
+        #F375C2
+    );
+}
+
+.divider span {
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.form-control{
+    background: linear-gradient(var(--color-surface)) padding-box,
+                var(--btn-gradient2) border-box;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    padding: 12px;
+    color: var(--color-text) !important;
+}
+
+.form-floating > .form-control:focus {
+
+    outline: none !important;
+
+    border: 2px solid transparent !important;
+
+    background:
+        linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
+        var(--btn-gradient2) border-box;
+
+    /* glow luar */
+    box-shadow: 
+        0 0 0 2px rgba(243, 117, 194, 0.3),
+        0 0 12px rgba(243, 117, 194, 0.7),
+        0 0 20px rgba(243, 117, 194, 0.4) !important;
+}

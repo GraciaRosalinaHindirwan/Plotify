@@ -26,6 +26,7 @@
   --btn-primary-hover: #B153D7;
   --btn-gradient: linear-gradient(90deg, #0E21A0, #4D2FB2, #B153D7, #F375C2);
   --btn-gradient2: linear-gradient(90deg, #4D2FB2, #B153D7, #F375C2, #B153D7,#4D2FB2);
+  --btn-gradient-logo: linear-gradient(180deg, #4D2FB2, #B153D7, #F375C2);
 
 
   /* =========================

@@ -341,3 +341,78 @@ body {
   font-weight: var(--fw-semibold);
   color: var(--color-text);
 }
+
+.wilayah{
+  margin: 8px;
+}
+
+.form-label{
+  margin: 8px;
+}
+
+.dropdown {
+  position: relative;
+  width: 250px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  color: var(--color-text);
+  border: 2px solid transparent; 
+  border-radius: 8px;
+  background: linear-gradient(#111, #111) padding-box,
+    var(--btn-gradient2) border-box !important;
+  background-color: var(--color-bg);
+}
+
+.dropdown-list {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(#111, #111) padding-box,
+    var(--btn-gradient2) border-box;
+  
+  color: var(--color-text);
+  max-height: 150px;
+  overflow-y: auto;
+  display: none;
+}
+
+.item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: linear-gradient(90deg, #7c3aed33, #ec489933);
+}
+
+.tags-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+
+  border: 2px solid transparent;
+
+  background:
+    linear-gradient(#111, #111) padding-box,
+    linear-gradient(90deg, #7c3aed, #ec4899) border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tag .remove {
+  cursor: pointer;
+  color: #ec4899;
+  font-weight: bold;
+}

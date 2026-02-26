@@ -155,11 +155,29 @@
           <label for="formFileLg" class="form-label">Profil</label>
           <input class="form-control form-control-lg" id="formFileLg" type="file">
         </div>
+
+        <div class="wilayah">
+          <label for="formFileLg" class="form-label">Wilayah Kerja</label>
+          <div class="dropdown">
+            <input type="text" id="searchInput" placeholder="Pilih kota..." />
+            <div class="dropdown-list" id="dropdownList">
+              <div class="item">Jakarta</div>
+              <div class="item">Bandung</div>
+              <div class="item">Surabaya</div>
+              <div class="item">Yogyakarta</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAG CONTAINER -->
+        <div class="tags-container" id="tagsContainer"></div>
+
       </form>
     </div>
   </div>
 
 </body>
+<script src="manajemen-akun.js"></script>
 <script>
   function toggleDropdown() {
     document.getElementById("submenu").classList.toggle("show");

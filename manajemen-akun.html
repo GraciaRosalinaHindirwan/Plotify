@@ -41,12 +41,12 @@
 
       <!-- Menu -->
       <ul class="menu">
-        <li class="menu-item active">
+        <li class="menu-item">
           <img src="img/dashboard.png" class="icon">
           <span>Dashboard</span>
         </li>
 
-        <li class="menu-item dropdown">
+        <li class="menu-item dropdown active">
 
           <div class="menu-main" onclick="toggleDropdown()">
 
@@ -61,10 +61,12 @@
 
           <ul class="submenu" id="submenu">
             <li>
-              Registrasi Agen dan Notaris
+              <a href="manajemen-akun.html">
+              Registrasi Agen dan Notaris </a>
             </li>
             <li>
-              Daftar Pengguna
+              <a href="pengguna.html">
+              Daftar Pengguna</a>
             </li>
           </ul>
         </li>
@@ -149,29 +151,28 @@
               <label for="floatingPassword" style="color:var(--color-text); font-size: var(--body-sm)">Password</label>
             </div>
           </div>
+          
+                  <div class="profil">
+                    <label for="formFileLg" class="form-label">Profil</label>
+                    <input class="form-control form-control-lg" id="formFileLg" type="file">
+                  </div>
+
+                  <div class="wilayah">
+                    <label for="formFileLg" class="form-label">Wilayah Kerja</label>
+                    <div class="dropdown">
+                      <input type="text" id="searchInput" placeholder="Pilih kota..." />
+                      <div class="dropdown-list" id="dropdownList">
+                        <div class="item">Jakarta</div>
+                        <div class="item">Bandung</div>
+                        <div class="item">Surabaya</div>
+                        <div class="item">Yogyakarta</div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- TAG CONTAINER -->
+                  <div class="tags-container" id="tagsContainer"></div>
         </div>
-
-        <div>
-          <label for="formFileLg" class="form-label">Profil</label>
-          <input class="form-control form-control-lg" id="formFileLg" type="file">
-        </div>
-
-        <div class="wilayah">
-          <label for="formFileLg" class="form-label">Wilayah Kerja</label>
-          <div class="dropdown">
-            <input type="text" id="searchInput" placeholder="Pilih kota..." />
-            <div class="dropdown-list" id="dropdownList">
-              <div class="item">Jakarta</div>
-              <div class="item">Bandung</div>
-              <div class="item">Surabaya</div>
-              <div class="item">Yogyakarta</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TAG CONTAINER -->
-        <div class="tags-container" id="tagsContainer"></div>
-
       </form>
     </div>
   </div>

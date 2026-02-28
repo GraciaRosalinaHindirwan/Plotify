@@ -233,8 +233,8 @@ body{
 .table-container{
     /* background-color: red; */
     width:100%;
-    border-collapse:collapse;
-    border-spacing:0 12px;
+    border-collapse: separate;
+    border-spacing: 0;
     padding: 32px;
     table-layout:fixed;
     border-radius: 8px;
@@ -248,11 +248,15 @@ body{
         0 0 20px rgba(168,85,247,0.15);
 }
 
-.head-container th, .head-container td{
-    border-left:none !important;
-    border-right:none !important;
-    border-top:none !important;
-    border-bottom:none !important;
+.head-container th {
+    border: none !important;
+}
+
+.head-container tr {
+    border-bottom: 2px solid transparent;
+    background:
+        linear-gradient(#0a0a0a,#0a0a0a) padding-box,
+        linear-gradient(90deg,#7c3aed,#ec4899) border-box;
 }
 
 .head-container{
